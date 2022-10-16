@@ -1,0 +1,190 @@
+/* root designs */
+
+:root {
+  --clr-accent-400: #0D1821;
+  --clr-accent-100: #B4CDED;
+
+  --clr-primary-400: #344966;
+
+  --clr-neutral-100: #F0F4EF;
+  --clr-neutral-900: #BFCC94;
+}
+
+/* fonts & details*/
+@font-face {
+  font-family: "cream";
+  src: url(fonts/cream/cream-DEMO.ttf);
+} 
+
+@font-face {
+  font-family: "alien";
+  src: url(fonts/alien/alm_____.ttf);
+}
+
+@font-face {
+  font-family: "akira";
+  src: url(fonts/akira_expanded/Akira-Expanded-Demo.otf)
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--clr-neutral-100);
+  font-family: "alien";
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: var(--clr-accent-400);
+  font-family: "alien";
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 1.875rem;
+  color: var(--clr-accent-400);
+  font-family: "alien";
+}
+
+.regular-text {
+  font-size: 1rem;
+  color: var(--clr-accent-400);
+  font-family: "akira";
+}
+
+.bg-accent-1 { 
+  background-color: var(--clr-accent-400);
+}
+
+.bg-accent-2 {
+  background-color: var(--clr-accent-100);
+}
+
+.bg-accent-3 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-accent-4 {
+  background-color: var(--clr-primary-400);
+}
+/* sub-fonts and details area */
+.header-container p,
+.header-container a {
+  font-size: min(0.875rem);
+  color: var(--clr-neutral-100);
+}
+
+.header-container p {
+  font-family: "alien";
+}
+
+.header-container a {
+  font-family: "akira";
+}
+
+.banner-text{
+  font-size: 2rem;
+  color: var(--clr-neutral-100);
+  font-family: "alien";
+}
+
+.ft-container p,
+.ft-container a {
+  font-size: 0.875rem;
+  color: var(--clr-neutral-100);
+}
+
+.ft-logo p {
+  font-family: "alien";
+}
+
+.ft-container a {
+  font-family: "akira";
+}
+
+.copyright p {
+  font-family: "akira";
+  color: #B4CDED;
+}
+
+/* reset from powell */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+/*Positioning*/
+
+.banner {
+  padding: 3rem 0;
+}
+
+.con-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.nav-text ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media only screen and (min-width: 806px) and (max-width: 1037px){
+ 
+  .con-container {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header-container p,
+  .header-container a {
+      font-size: 25rem;
+  }
+
+  .nav-text ul {
+      flex-wrap: wrap;
+  }
+}
+/*Content edits*/
+
+.copyright p {
+  text-align: center;
+  padding: 3rem 0 0;
+}
